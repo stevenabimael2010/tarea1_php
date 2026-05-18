@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 18</title>
+</head>
+<body>
+    <h2><center>Factura electronica</center></h2>
+    <form action="ejercicio18.php" method="POST">
+        <label for="nombre">Nombre del cliente: </label>
+        <input type="text" name="nombre" required>
+        <br><br>
+        <label for="prod">Producto: </label>
+        <input type="text" name="prod" required>
+        <br><br>
+        <label for="cant">Cantidad de producto: </label>
+        <input type="number" name="cant" min="1" required>
+        <br><br>
+        <label for="precio">Precio unitario: </label>
+        <input type="number" name="precio" step="0.01" min="0.01" required>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
